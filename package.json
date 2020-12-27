@@ -1,22 +1,29 @@
 {
-  "name": "vue2-datepicker",
+  "name": "vue2-date",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "build:tw": "npx tailwindcss-cli@latest build ./src/assets/css/tailwindcss.css -c ./tailwind.config.js -o ./src/assets/css/tailwindcss.min.css"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-moment": "^4.1.0",
     "vue-router": "^3.2.0",
+    "vue2-datepicker": "^3.8.2",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
